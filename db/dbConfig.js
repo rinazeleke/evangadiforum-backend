@@ -3,7 +3,6 @@ const mysql2 = require("mysql2");
 
 const dbConnection = mysql2.createPool({
   host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
   user: process.env.DB_USER, // Ensure you have this in your .env
   database: process.env.DB_DATABASE, // Ensure you have this in your .env
   password: process.env.DB_PASSWORD, // Ensure you have this in your .env
